@@ -538,7 +538,7 @@ function htmlToPdfMake(htmlText, options) {
     if (params.cell.rowSpan) {
       var len = params.cell.rowSpan;
       for (var i=1; i <= len-1; i++) {
-        cells = (params.rows[params.rowIndex+i].text || params.rows[params.rowIndex+i].stack);
+        cells = (params.rows[params.rowIndex+i] && params.rows[params.rowIndex+i].text || params.rows[params.rowIndex+i] && params.rows[params.rowIndex+i].stack);
         if (cells) cells.splice(params.cellIndex, 0, {text:''});
         else {
           // if we have an empty <tr></tr> after a row with rowspan, then we need to remove rowSpan

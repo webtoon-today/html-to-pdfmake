@@ -20,10 +20,15 @@
   },
   "homepage": "https://github.com/Aymkdn/html-to-pdfmake#readme",
   "devDependencies": {
+    "browserify": "^17.0.0",
+    "commander": "^11.0.0",
     "eslint": "^5.16.0",
     "jsdom": "^16.6.0",
     "pdfmake": "^0.2.7",
     "simple-test-framework": "^0.1.7",
-    "svg-to-pdfkit": "^0.1.8"
+    "svg-to-pdfkit": "^0.1.8",
+    "uglify-js": "^3.17.4"
+  },
+  "dependencies": {
   }
 }
